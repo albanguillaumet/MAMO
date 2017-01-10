@@ -1,3 +1,8 @@
+
+# This file contains the code to load the libraries and functions required by MAMO and associated functions
+
+#---------------------------------------------------------------------------------------------------------------------------------------
+
 # load libraries
 
 library(truncnorm)
