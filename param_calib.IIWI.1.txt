@@ -1,0 +1,2 @@
+species	t.b	 f.nb.1	min.fledg	peak.fledg	s.ad_min	s.ad_max	rat.s_min	rat.s_max	s.juv_min	s.juv_max	fec_min	fec_max	fec.1_min	fec.1_max	rat.f_min	rat.f_max	K.b_min	K.b_max	K.nb.1	K.nb.1_min	K.nb.1_max	Sm.ac_min	Sm.ac_max	gamma.mov	gamma.mov_min	gamma.mov_max	R.ter_min	R.ter_max	fidelity.ad_min 	fidelity.ad_max	m.natal_min	m.natal_max	psi.DD_min	psi.DD_max
+IIWI	242	0.5	100	0.67	0.729	0.877	0	0	0.3645	0.4385	1.5	3	1.5	3	0	0	550	650	K.nb.1	2003	2004	0.02	0.13	NA	-10	10	0.0234	0.0234	0.2	0.95	0.3	0.95	1	1.5
