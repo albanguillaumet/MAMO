@@ -1,7 +1,10 @@
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# New version of f.plot.composite (km instead of Km)
+
 f.plot.composite = function(
 output.dir = "C:/Programs/MAMO/RUN/IIWI.1_3", 
+#var.excl = c("alpha.b.low", "alpha.b.low"), val.excl = c(0.00449374, 0.00898748),
 var.excl = NA, val.excl = NA,
 ylab = "# pairs Iiwi / ha of native forest", fig.title = NA, main = "", margin.up = 0.5,
 wch.plot = "RISK", col.cat = c("grey90", "grey70", "pink", "grey40", "black"), add.cline.cat = c("FALSE", rep("TRUE", 4)),
@@ -62,7 +65,7 @@ unit = d.subset$unit[1]
 vec.np = c(d.subset$np.high, d.subset$np.mid, d.subset$np.low) / ( unit^2 * 100 )
 max.y = ceiling( max( vec.np ) ) + margin.up
 
-if(create.plot == TRUE) plot(x, rep(0, length(x)), xlim = c(min(x), max(x)), ylim = c(0, max.y), type = "n", bty = "n", xlab = "Elevation (Km)", ylab = ylab, main = main, cex.main = 0.7)
+if(create.plot == TRUE) plot(x, rep(0, length(x)), xlim = c(min(x), max(x)), ylim = c(0, max.y), type = "n", bty = "n", xlab = "Elevation (km)", ylab = ylab, main = main, cex.main = 0.7)
 
 #----------
 
@@ -88,6 +91,7 @@ r = unique(d.subset$batch); nr = length(r)
 				p_ = list()
 				for(j in 1 : n.sim) {
 					p_[[j]] = get.p( d = paste("s", r[i], ".", j, ".Rdata", sep = "") )
+					#points(x, p_[[j]], col = col, pch = pch, cex = cex)	
 					dp = rbind(dp, p_[[j]])
 				}# j
 
